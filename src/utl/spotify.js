@@ -1,6 +1,5 @@
 const clientId = '5a72b9db55194aeb9d98a42cb5c5544e';
-const redirectUri = 'http://danielwilstrop.github.io/jamming';
-
+const redirectUri = 'http://localhost:3000/';
 let accessToken;
 
 const Spotify = {
@@ -33,6 +32,7 @@ const Spotify = {
         }).then(
             response => { 
                 if (response.ok) {
+                    console.log(response.json)
                     return response.json();
                 } else {
                     console.log('API request failed');

@@ -33,8 +33,13 @@
     border: 0px;
     color: #fff;
     font-weight: 500;
+    margin: 0.25rem;
   }
   
   .SearchButton:hover {
     background-color: rgba(108, 65, 233, .7);
+  }
+
+  .container {
+    display: flex;
   }

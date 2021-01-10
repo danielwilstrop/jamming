@@ -1,4 +1,5 @@
 import React from 'react'
+import Spotify from '../../utl/spotify';
 import './searchbar.css';
 
 class Searchbar extends React.Component {
@@ -8,6 +9,7 @@ class Searchbar extends React.Component {
     this.search = this.search.bind(this)
     this.handleTermChange = this.handleTermChange.bind(this)
     this.handleKeyPress = this.handleKeyPress.bind(this)
+    this.login = this.login.bind(this)
     }
 
     search() {
@@ -24,10 +26,17 @@ class Searchbar extends React.Component {
         this.setState( {term: e.target.value} )
     }
 
+    login() {
+        Spotify.getAccessToken()
+    }
+
     render() {
         return <div className="SearchBar">
                     <input placeholder="Enter A Song, Album, or Artist" onChange = {this.handleTermChange} onKeyUp = {this.handleKeyPress} />
-                    <button className="SearchButton"  onClick = {this.search}>SEARCH</button>
+                    <div className = "container">
+                        <button className="SearchButton" onClick = {this.login}>SPOTIFY LOGIN</button>
+                        <button className="SearchButton"  onClick = {this.search}>SEARCH</button>
+                    </div>
                 </div>
     }
 }
