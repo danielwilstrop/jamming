@@ -4,7 +4,9 @@ Project work form codecademy using React.
 
 Great little project to leant about the use of REST API's, GET/POST methods and using OAUTH and the process required
 
-Few days work, thoroughly enjoyed makign this app
+Few days work, thoroughly enjoyed making this app
+
+Live site here https://danielwilstrop.github.io/jamming/
 
 
 # Getting Started with Create React App
