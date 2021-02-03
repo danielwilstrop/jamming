@@ -1,3 +1,12 @@
+# Spotify Playlist Creator using React.js
+
+Project work form codecademy using React.
+
+Great little project to leant about the use of REST API's, GET/POST methods and using OAUTH and the process required
+
+Few days work, thoroughly enjoyed makign this app
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
